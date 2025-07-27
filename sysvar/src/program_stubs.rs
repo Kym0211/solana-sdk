@@ -33,6 +33,12 @@ pub trait SyscallStubs: Sync + Send {
         sol_log("SyscallStubs: sol_remaining_compute_units() defaulting to 0");
         0
     }
+
+    //custom syscall
+    fn bulk_sysvar_fetch(&self) -> u64 {
+        self.sol_log("SyscallStubs: bulk_sysvar_fetch() stub called");
+        0
+    }
     fn sol_invoke_signed(
         &self,
         _instruction: &Instruction,
@@ -129,6 +135,10 @@ pub fn sol_log_compute_units() {
 
 pub fn sol_remaining_compute_units() -> u64 {
     SYSCALL_STUBS.read().unwrap().sol_remaining_compute_units()
+}
+
+pub fn bulk_sysvar_fetch() -> u64 {
+     SYSCALL_STUBS.read().unwrap().sol_remaining_compute_units()
 }
 
 pub fn sol_invoke_signed(

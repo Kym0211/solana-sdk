@@ -489,6 +489,7 @@ pub mod slot_hashes;
 pub mod slot_history;
 pub mod syscalls;
 pub mod sysvar;
+pub mod bulk_sysvar;
 
 #[deprecated(since = "2.2.0", note = "Use `solana-big-mod-exp` crate instead")]
 pub use solana_big_mod_exp as big_mod_exp;
