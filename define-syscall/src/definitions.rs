@@ -42,3 +42,6 @@ define_syscall!(fn sol_get_epoch_rewards_sysvar(addr: *mut u8) -> u64);
 
 // this cannot go through sol_get_sysvar but can be removed once no longer in use
 define_syscall!(fn sol_get_fees_sysvar(addr: *mut u8) -> u64);
+
+// custom syscall 
+define_syscall!(fn bulk_sysvar_fetch() -> u64);
