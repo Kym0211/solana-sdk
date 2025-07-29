@@ -72,6 +72,9 @@ pub trait SyscallStubs: Sync + Send {
     fn sol_get_epoch_rewards_sysvar(&self, _var_addr: *mut u8) -> u64 {
         UNSUPPORTED_SYSVAR
     }
+    fn sol_get_greet_sysvar(&self, _var_addr: *mut u8) -> u64 {
+        UNSUPPORTED_SYSVAR
+    }
     fn sol_get_last_restart_slot(&self, _var_addr: *mut u8) -> u64 {
         UNSUPPORTED_SYSVAR
     }
@@ -182,6 +185,10 @@ pub(crate) fn sol_get_fees_sysvar(var_addr: *mut u8) -> u64 {
 
 pub(crate) fn sol_get_rent_sysvar(var_addr: *mut u8) -> u64 {
     SYSCALL_STUBS.read().unwrap().sol_get_rent_sysvar(var_addr)
+}
+
+pub(crate) fn sol_get_greet_sysvar(var_addr: *mut u8) -> u64 {
+    SYSCALL_STUBS.read().unwrap().sol_get_greet_sysvar(var_addr)
 }
 
 pub(crate) fn sol_get_last_restart_slot(var_addr: *mut u8) -> u64 {

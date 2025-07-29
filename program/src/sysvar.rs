@@ -5,7 +5,7 @@ pub use solana_sysvar_id::{declare_deprecated_sysvar_id, declare_sysvar_id, Sysv
 pub use {
     solana_sdk_ids::sysvar::{check_id, id, ID},
     solana_sysvar::{
-        clock, epoch_rewards, epoch_schedule, fees, last_restart_slot, recent_blockhashes, rent,
+        clock, greet, epoch_rewards, epoch_schedule, fees, last_restart_slot, recent_blockhashes, rent,
         rewards, slot_hashes, slot_history, stake_history, Sysvar, SysvarSerialize,
     },
 };

@@ -99,6 +99,7 @@ pub mod rewards;
 pub mod slot_hashes;
 pub mod slot_history;
 pub mod stake_history;
+pub mod greet;
 
 /// Return value indicating that the  `offset + length` is greater than the length of
 /// the sysvar data.

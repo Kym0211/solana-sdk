@@ -39,6 +39,7 @@ define_syscall!(fn sol_get_epoch_schedule_sysvar(addr: *mut u8) -> u64);
 define_syscall!(fn sol_get_rent_sysvar(addr: *mut u8) -> u64);
 define_syscall!(fn sol_get_last_restart_slot(addr: *mut u8) -> u64);
 define_syscall!(fn sol_get_epoch_rewards_sysvar(addr: *mut u8) -> u64);
+define_syscall!(fn sol_get_greet_sysvar(addr: *mut u8) -> u64);
 
 // this cannot go through sol_get_sysvar but can be removed once no longer in use
 define_syscall!(fn sol_get_fees_sysvar(addr: *mut u8) -> u64);

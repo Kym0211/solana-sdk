@@ -80,6 +80,9 @@ pub mod sysvar {
     pub mod epoch_rewards {
         solana_pubkey::declare_id!("SysvarEpochRewards1111111111111111111111111");
     }
+    pub mod greet {
+        solana_pubkey::declare_id!("SysvarGreet11111111111111111111111111111111");
+    }
     pub mod epoch_schedule {
         solana_pubkey::declare_id!("SysvarEpochSchedu1e111111111111111111111111");
     }

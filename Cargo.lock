@@ -3256,6 +3256,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "solana-greet"
+version = "0.1.0"
+dependencies = [
+ "serde",
+ "serde_derive",
+ "solana-sdk-ids",
+ "solana-sdk-macro",
+ "solana-sysvar-id",
+]
+
+[[package]]
 name = "solana-hard-forks"
 version = "2.2.1"
 dependencies = [
@@ -4127,6 +4138,7 @@ dependencies = [
  "solana-fee-calculator",
  "solana-frozen-abi",
  "solana-frozen-abi-macro",
+ "solana-greet",
  "solana-hash",
  "solana-instruction",
  "solana-last-restart-slot",
